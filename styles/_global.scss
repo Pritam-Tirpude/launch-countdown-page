@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary_grayish_blue: hsl(237, 18%, 59%);
+$primary_soft_red: hsl(345, 95%, 68%);
+
+$neutral_white: hsl(0, 0%, 100%);
+$neutral_Dark_desaturated_blue: hsl(236, 21%, 26%);
+$neutral_Very_dark_blue: hsl(235, 16%, 14%);
+$neutral_black: hsl(234, 17%, 12%);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1.4rem;
+  background: url("../images/pattern-hills.svg") no-repeat center bottom,
+    url("../images/bg-stars.svg") $neutral_black;
+}

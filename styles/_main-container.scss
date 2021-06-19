@@ -1,0 +1,162 @@
+.countdown-container {
+  @include flex(center, center, column);
+  min-height: 60vh;
+  h1 {
+    padding: 5rem;
+    font-size: 3rem;
+    color: $neutral_white;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+  }
+
+  .countdown {
+    @include flex(space-around, center, row);
+    gap: 30px;
+    .days-container {
+      @include flex(center, center, column);
+      .days {
+        background: $neutral_Dark_desaturated_blue;
+        @include flex(center, center, column);
+        width: 200px;
+        height: 200px;
+        border-radius: 1rem;
+
+        h2 {
+          font-size: 10rem;
+          color: $primary_soft_red;
+        }
+      }
+
+      h4 {
+        padding-top: 3rem;
+        color: $primary_grayish_blue;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+      }
+    }
+
+    .hours-container {
+      @include flex(center, center, column);
+
+      .hours {
+        background: $neutral_Dark_desaturated_blue;
+        @include flex(center, center, column);
+        width: 200px;
+        height: 200px;
+        border-radius: 1rem;
+
+        h2 {
+          font-size: 10rem;
+          color: $primary_soft_red;
+        }
+      }
+      h4 {
+        padding-top: 3rem;
+        color: $primary_grayish_blue;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+      }
+    }
+
+    .minutes-container {
+      @include flex(center, center, column);
+
+      .minutes {
+        background: $neutral_Dark_desaturated_blue;
+        @include flex(center, center, column);
+        width: 200px;
+        height: 200px;
+        border-radius: 1rem;
+
+        h2 {
+          font-size: 10rem;
+          color: $primary_soft_red;
+        }
+      }
+      h4 {
+        padding-top: 3rem;
+        color: $primary_grayish_blue;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+      }
+    }
+
+    .seconds-container {
+      @include flex(center, center, column);
+
+      .seconds {
+        background: $neutral_Dark_desaturated_blue;
+        @include flex(center, center, column);
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border-radius: 1rem;
+        transition: all 0.5s ease;
+        perspective: 200px;
+
+        h2 {
+          font-size: 10rem;
+          color: $primary_soft_red;
+          transition: all 1s ease;
+        }
+
+        h2::after {
+          content: "";
+          position: absolute;
+          left: 0%;
+          bottom: 0%;
+          width: 100%;
+          height: 50%;
+          background: $neutral_Dark_desaturated_blue;
+          z-index: -1;
+          border-radius: 1rem;
+          animation: anim 1s ease forwards infinite;
+        }
+      }
+
+      h4 {
+        padding-top: 3rem;
+        color: $primary_grayish_blue;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+      }
+    }
+  }
+}
+
+.social-icons {
+  @include flex(Center, center, row);
+  padding: 10rem;
+  gap: 20px;
+
+  .fab {
+    color: $primary_grayish_blue;
+
+    &:hover {
+      box-shadow: 0px 20px 50px $primary_soft_red;
+      color: $primary_soft_red;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@keyframes anim {
+  from {
+    transform: rotateX(180deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}

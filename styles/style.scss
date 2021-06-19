@@ -1,0 +1,14 @@
+@import "global";
+@import "main-container";
+
+@media screen and (max-width: 768px) {
+  .countdown-container {
+    h1 {
+      text-align: center;
+    }
+
+    .countdown {
+      transform: scale(0.4);
+    }
+  }
+}

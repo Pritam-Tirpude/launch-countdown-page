@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1.4rem;
+  background: url("../images/pattern-hills.svg") no-repeat center bottom, url("../images/bg-stars.svg") #191a24;
+}
+
+.countdown-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 60vh;
+}
+
+.countdown-container h1 {
+  padding: 5rem;
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 0.5rem;
+}
+
+.countdown-container .countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+}
+
+.countdown-container .countdown .days-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.countdown-container .countdown .days-container .days {
+  background: #343650;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+}
+
+.countdown-container .countdown .days-container .days h2 {
+  font-size: 10rem;
+  color: #fb6087;
+}
+
+.countdown-container .countdown .days-container h4 {
+  padding-top: 3rem;
+  color: #8486a9;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.countdown-container .countdown .hours-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.countdown-container .countdown .hours-container .hours {
+  background: #343650;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+}
+
+.countdown-container .countdown .hours-container .hours h2 {
+  font-size: 10rem;
+  color: #fb6087;
+}
+
+.countdown-container .countdown .hours-container h4 {
+  padding-top: 3rem;
+  color: #8486a9;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.countdown-container .countdown .minutes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.countdown-container .countdown .minutes-container .minutes {
+  background: #343650;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+}
+
+.countdown-container .countdown .minutes-container .minutes h2 {
+  font-size: 10rem;
+  color: #fb6087;
+}
+
+.countdown-container .countdown .minutes-container h4 {
+  padding-top: 3rem;
+  color: #8486a9;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.countdown-container .countdown .seconds-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.countdown-container .countdown .seconds-container .seconds {
+  background: #343650;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-perspective: 200px;
+          perspective: 200px;
+}
+
+.countdown-container .countdown .seconds-container .seconds h2 {
+  font-size: 10rem;
+  color: #fb6087;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.countdown-container .countdown .seconds-container .seconds h2::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 50%;
+  background: #343650;
+  z-index: -1;
+  border-radius: 1rem;
+  -webkit-animation: anim 1s ease forwards infinite;
+          animation: anim 1s ease forwards infinite;
+}
+
+.countdown-container .countdown .seconds-container h4 {
+  padding-top: 3rem;
+  color: #8486a9;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: Center;
+      -ms-flex-pack: Center;
+          justify-content: Center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10rem;
+  gap: 20px;
+}
+
+.social-icons .fab {
+  color: #8486a9;
+}
+
+.social-icons .fab:hover {
+  -webkit-box-shadow: 0px 20px 50px #fb6087;
+          box-shadow: 0px 20px 50px #fb6087;
+  color: #fb6087;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@-webkit-keyframes anim {
+  from {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  to {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes anim {
+  from {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  to {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .countdown-container h1 {
+    text-align: center;
+  }
+  .countdown-container .countdown {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+/*# sourceMappingURL=style.css.map */
