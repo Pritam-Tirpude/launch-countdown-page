@@ -39,7 +39,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [PRicing Component Toggle Master Solution](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC/hub/html-css-sass-javascript-eyR86euZD)
+- Solution URL: [Launch Countdown Page Solution](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-/hub/html5-css3-sass-flex-javascript-gXbJhVSJp)
 - Live Site URL: [Live Site](https://launch-countdown-site.netlify.app/)
 
 ## My process
